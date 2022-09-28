@@ -1,32 +1,32 @@
 public class Main {
     public static void main(String[] args) {
-        String firstBook = "A";
-        String firstBooksAuthor = "A A";
-        int firstBookYear = 2020;
+        String firstBook = "Анна Каренина";
+        String firstBooksAuthor = "Лев Толстой";
+        int firstBookYear = 1878;
 
-        String secondBook = "B";
-        String secondBooksAuthor = "B B";
-        int secondBookYear = 2011;
+        String secondBook = "Капитанская дочка";
+        String secondBooksAuthor = "Александр Пушкин";
+        int secondBookYear = 1836;
 
-        String[] books = {"A", "B"};
-        String[] authors = {" K.A", "B.B"};
-        int[] years = {2020, 2011};
+        String[] books = {"Анна Каренина", "Капитанская дочка"};
+        String[] authors = {"Лев Толстой", "Александр Пушкин"};
+        int[] years = {1878, 1836};
 
         for (int i = 0; i < books.length; i++) {
             System.out.println("Book name: " + books[i] + " Year: " + years[i] + " Author: " + authors[i]);
 
         }
-        Book first = new Book("A", 2020);
-        Author firstAuthor = new Author(" K.A");
+        Book first = new Book("Анна Каренина", 1878);
+        Author firstAuthor = new Author("Лев Толстой");
         System.out.println("Book: " + first.getBookName());
         System.out.println("Publishing year: " + first.getYear());
         System.out.println("Author: " + firstAuthor.getAuthor());
 
-        Book second = new Book("B", 2011);
-        Author secondAuthor = new Author("B.B");
+        Book second = new Book("Капитанская дочка", 1836);
+        Author secondAuthor = new Author("Александр Пушкин");
         System.out.println("Book: " + second.getBookName());
         System.out.println("Publishing year: " + second.getYear());
-        second.setYear(2012);
+        second.setYear(2022);
         System.out.println(second.getYear());
         System.out.println("Author: " + secondAuthor.getAuthor());
 
