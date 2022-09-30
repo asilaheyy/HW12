@@ -16,13 +16,13 @@ public class Main {
             System.out.println("Book name: " + books[i] + " Year: " + years[i] + " Author: " + authors[i]);
 
         }
-        Book first = new Book("Анна Каренина", " ", 1878);
+        Book first = new Book("Анна Каренина",new Author(" Лев ", " Толстой ") , 1878);
         Author firstAuthor = new Author ("Лев ", " Толстой");
         System.out.println("Book: " + first.getBookName());
         System.out.println("Publishing year: " + first.getYear());
         System.out.println("Author: " + firstAuthor.getAuthorFirstName() + firstAuthor.getAuthorLastName());
 
-        Book second = new Book("Капитанская дочка",   " ", 1836);
+        Book second = new Book("Капитанская дочка",new Author(" Александр "," Пушкин ") , 1836);
         Author secondAuthor = new Author("Александр ", " Пушкин");
         System.out.println("Book: " + second.getBookName());
         System.out.println("Publishing year: " + second.getYear());

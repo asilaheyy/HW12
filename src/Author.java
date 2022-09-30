@@ -9,8 +9,6 @@ public class Author {
 
     }
 
-
-
     public String getAuthorFirstName() {
         return this.authorFirstName;
     }
