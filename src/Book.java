@@ -25,4 +25,8 @@ public class Book {
         this.year = year;
 
     }
+
+    public Author getBooksAuthor() {
+        return this.booksAuthor;
+    }
 }
